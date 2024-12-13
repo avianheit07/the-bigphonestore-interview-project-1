@@ -1,0 +1,17 @@
+{
+    "name": "christopherrey.pantoja/bigphonestory-interview-project",
+    "description": "This will parse multiple different formats of files and will aggregate the records and count existing record as Product object",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "christopherrey.pantoja",
+            "email": "christopherrey.pantoja@gmail.com"
+        }
+    ],
+    "require": {}
+}
