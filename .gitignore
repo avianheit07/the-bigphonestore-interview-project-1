@@ -1,4 +1,6 @@
 /vendor/
 /files/temp/
 src/files/temp/
-src/files/examples/results/
+files/examples/results/*
+!files/examples/results/
+!files/examples/results/.gitignore

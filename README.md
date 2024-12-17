@@ -7,9 +7,14 @@ This will parse multiple different formats of files and will return a Product ob
 ## Installation
 Instructions on how to install and set up the project.
 
-```sh
 # Clone the repository
-git clone https://github.com/yourusername/yourproject.git
+git clone git@github.com:avianheit07/the-bigphonestore-interview-project-1.git
 
 # Navigate to the project directory
-cd yourproject
+cd the-bigphonestore-interview-project-1
+
+# Run command
+composer install
+
+# Run command to parse and aggregate results
+php parser.php --file products_comma_separated.csv --unique-combinations=combination_count_1.csv
