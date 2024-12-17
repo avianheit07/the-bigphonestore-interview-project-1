@@ -18,3 +18,6 @@ composer install
 
 # Run command to parse and aggregate results
 php parser.php --file products_comma_separated.csv --unique-combinations=combination_count_1.csv
+
+## Results
+- After running the command to parse and aggregate, the resulting file containing unique combination is located in directory /files/examples/results
