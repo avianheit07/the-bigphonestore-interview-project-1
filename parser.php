@@ -2,6 +2,7 @@
 
 use App\Services\Parsers\CsvParser;
 use App\Services\ProductAggregator;
+use App\Services\TempFileProcessor;
 
 require_once __DIR__ . '/vendor/autoload.php';
 
@@ -30,7 +31,8 @@ if (!file_exists($filesDirectory . $inputFile)) {
     die('File not found');
 }
 
-$aggregator = new ProductAggregator($parser);
+$tempFileManager = new TempFileProcessor(__DIR__ . '/files/temp/');
+$aggregator = new ProductAggregator($parser, $tempFileManager);
 $aggregator->aggregate($filesDirectory . $inputFile, $filesDirectory . '/results/' . $outputFile);
 
 echo "Done!";
